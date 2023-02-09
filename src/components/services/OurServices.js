@@ -1,7 +1,7 @@
 import React from "react";
 import { SiAntdesign } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
-import Card from "./Card";
+import Card from "../about/Card";
 
 const AboutCards = () => {
     return (

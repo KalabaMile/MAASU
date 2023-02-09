@@ -3,9 +3,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FiSend } from "react-icons/fi";
 import { logo } from "../../assets/index";
 import { motion } from "framer-motion";
-import { FaUsersCog } from "react-icons/fa";
+import { FaAddressCard, FaServer, FaUsersCog } from "react-icons/fa";
 
-const Left = ({ about, contact, ourTeam }) => {
+const Left = ({ services, about, contact, ourTeam }) => {
   const [text] = useTypewriter({
     words: ["We are MAASU.", "We love what","We do.", "Grow with us."],
     loop: true,
@@ -27,6 +27,14 @@ const Left = ({ about, contact, ourTeam }) => {
             {text}
             <Cursor cursorBlinking="false" cursorStyle="|" />
           </p>
+        </div>
+        <div className="flex h-14">
+          <button onClick={about} className="w-1/2 border-t-[1px] border-t-zinc-800 border-r-[1px] border-r-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-3 hover:text-designColor duration-300">
+            About Us <FaAddressCard />
+          </button>
+          <button onClick={services} className="w-1/2 border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-3 hover:text-designColor duration-300">
+            Our Services <FaServer />
+          </button>
         </div>
         <div className="flex h-14">
           <button onClick={ourTeam} className="w-1/2 border-t-[1px] border-t-zinc-800 border-r-[1px] border-r-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-3 hover:text-designColor duration-300">
