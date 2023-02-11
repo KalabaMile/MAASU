@@ -14,13 +14,13 @@ const Left = ({ services, about, contact, ourTeam }) => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full lgl:w-5/12 bg-bodyColor opacity-80 rounded-2xl shadow-testShwdow">
+    <div className="w-full lgl:mr-5 lgl:w-5/12 bg-bodyColor opacity-80 rounded-2xl shadow-testShwdow">
       <div className="w-full h-2/5 flex flex-col justify-between border-t-0 rounded-bl-xl rounded-br-xl">
         <div className="flex flex-col items-center gap-2 py-10">
           <a onClick={about} role="button" href="#">
           <motion.img className="px-20 py-10" alt="logo" src={logo}
             animate={{ scale: 0.9 }}
-            transition={{ ease: "linear", duration: 1, repeat: Infinity }}
+            transition={{ ease: "linear", duration: 1.7, repeat: Infinity }}
           />
           </a>
           <p className="text-base text-4xl text-designColor tracking-wide">

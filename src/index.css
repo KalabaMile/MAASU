@@ -22,7 +22,7 @@
   }
   /* ======================== About Me Start ========================== */
   .aboutLeftLiSpan {
-    @apply bg-yellow-400 text-zinc-800 font-bold px-4 py-[1px] rounded-full;
+    @apply bg-textColor text-zinc-800 font-bold px-4 py-[1px] rounded-full;
   }
   /* ======================== About Me End ============================ */
   .sidenavLi{

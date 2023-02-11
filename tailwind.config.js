@@ -19,7 +19,7 @@ module.exports = {
       },
       colors: {
         bodyColor: "#191919",
-        textColor: "rgba(255, 255, 255, 0.85)",
+        textColor: "#ABF1BC",
         designColor: "#307ac9",
         titleRoundBg:
           "linear-gradient(135deg,rgba(120,204,109,.15) 0%,rgba(120,204,109,1%) 100%)",

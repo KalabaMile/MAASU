@@ -1,20 +1,21 @@
 import React from "react";
+import { eld, eon, porsche, walter } from "../../assets";
 import Card from "./Card";
 
 const TrustedBy = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <Card
-        title="Walter"
+        image={eld}
       />
       <Card
-        title="E-ON"
+        image={porsche}
       />
       <Card
-        title="Porsche Engineering"
+        image={eon}
       />
       <Card
-        title="ELD"
+        image={walter}
       />
     </div>
   );

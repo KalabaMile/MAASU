@@ -6,9 +6,17 @@ import workImgSix from "./team/workImgSix.jpg"
 import workImgSeven from "./team/workImgSeven.jpg"
 import workImgEight from "./team/workImgEight.jpg"
 import logo from "./logo.png";
+import eld from "./eld.png";
+import porsche from "./porsche.png";
+import eon from "./eon.png";
+import walter from "./walter.png";
 
 export { 
     logo,
+    eld,
+    porsche,
+    eon,
+    walter,
     workImgOne,
     workImgTwo,
     workImgFour,

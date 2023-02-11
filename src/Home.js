@@ -29,7 +29,7 @@ const Home = () => {
             }
             className={`${about
               ? "text-designColor"
-              : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+              : "w-full h-6 text-white text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
               } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <FaAddressCard />
@@ -47,7 +47,7 @@ const Home = () => {
             }
             className={`${services
               ? "text-designColor"
-              : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+              : "w-full h-6 text-white text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
               } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <FaServer />
@@ -65,7 +65,7 @@ const Home = () => {
             }
             className={`${ourTeam
               ? "text-designColor"
-              : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+              : "w-full h-6 text-white text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
               } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <FaUsersCog />
@@ -83,7 +83,7 @@ const Home = () => {
             }
             className={`${contact
               ? "text-designColor"
-              : "w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
+              : "w-full h-6 text-white text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
               } w-full h-6 text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group`}
           >
             <FaEnvelope />
