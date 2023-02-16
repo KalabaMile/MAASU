@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaUsersCog, FaAddressCard, FaServicestack, FaSuperpowers, FaServer } from "react-icons/fa";
+import { FaEnvelope, FaUsersCog, FaAddressCard, FaServer, FaArrowUp } from "react-icons/fa";
 import Left from "./components/home/Left";
 import About from "./components/about/About";
 import OurTeam from "./components/team/OurTeam";
@@ -12,6 +12,17 @@ const Home = () => {
   const [ourTeam, setOurTeam] = useState(false);
   const [contact, setContact] = useState(false);
   const [services, setServices] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollPos = window.pageYOffset;
+      setShowButton(currentScrollPos > 0);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="w-full lgl:w-[85%] h-full lgl:h-[85%] bg-transparent text-white relative z-40 flex items-center justify-between p-4 lgl:p-0">
@@ -123,6 +134,26 @@ const Home = () => {
             {ourTeam ? <OurTeam /> : null}
             {contact ? <Contact /> : null}
             {services ? <Services /> : null}
+            {showButton && (
+              <button
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                }}
+                className="rounded-full"
+                style={{
+                  position: 'fixed',
+                  padding: '1rem 1rem',
+                  fontSize: '13px',
+                  bottom: '30px',
+                  right: '30px',
+                  backgroundColor: '#307ac9',
+                  color: '#fff',
+                  textAlign: 'center',
+                }}
+              >
+                <FaArrowUp/>
+              </button>
+            )}
           </div>
           {/* ======================== Smaller device content End ========================== */}
           <div className="w-full h-[96%] hidden lgl:flex justify-center overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]">
